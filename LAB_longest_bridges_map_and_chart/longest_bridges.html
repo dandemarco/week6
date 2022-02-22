@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <title>Longest Bridges Map</title>
+    <head>
+
+        <!--Leaflet script and CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+
+        <!--Chart.js script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--Our stylesheet. Make sure the size of the map div is set before trying to draw the map-->
+        <link rel="stylesheet" type="text/css" href="bridge_map.css">
+
+        <!-- Our script, uses Leaflet to draw the maps and map components for this page-->
+        <script async defer src="bridge_map.js"></script>
+
+        
+    </head>
+    
+    <body>
+
+        <h1>Where are the longest bridges in the US?</h1>
+        <div id="bridge-map"></div>
+
+        <canvas id="longest-bridges-chart"></canvas>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+
+    </head>
+
+    <body>
+        <canvas id="canvas" height="500" width="500"></canvas>
+
+        <script>
+            let canvas = document.querySelector("#canvas")
+            let context = canvas.getContext("2d")
+
+            canvas.addEventListener("click", function() {
+                //Make variables representing where on the canvas the mouse clicks
+                let x = event.offsetX
+                let y = event.offsetY
+
+                //Make variable for size of shape
+                let size = 5
+
+                //Make a square appear at point where canvas is clicked
+                context.fillRect(x-(size/2), y-(size/2), size, size)    //the "-(size/2)" helps center the shape on the cursor
+            })
+
+        //FOR LAB:
+        //Draw a circle instead of a square
+        //Add an input type="color" for the user to select the color to draw
+        //Add an input type="range" to select the size of the circle drawn
+        //Add a clear button
+            //Meaning: draw a white rectange to cover the canvas to "clear" the current drawing
+
+        </script>
+    </body>
+
+</html>
